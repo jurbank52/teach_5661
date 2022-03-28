@@ -1,4 +1,4 @@
-#' @include RKazam.R
+#' @include Rteach_5661.R
 NULL
 
 #' DBI methods
@@ -7,7 +7,7 @@ NULL
 #' @name DBI
 NULL
 
-#' Kazam driver
+#' teach_5661 driver
 #'
 #' TBD.
 #'
@@ -16,15 +16,15 @@ NULL
 #' @examples
 #' \dontrun{
 #' #' library(DBI)
-#' RKazam::Kazam()
+#' Rteach_5661::teach_5661()
 #' }
-Kazam <- function() {
-  new("KazamDriver")
+teach_5661 <- function() {
+  new("teach_5661Driver")
 }
 
 #' @rdname DBI
 #' @export
-setClass("KazamDriver", contains = "DBIDriver")
+setClass("teach_5661Driver", contains = "DBIDriver")
 
 #' @export
 DBI::dbCanConnect
